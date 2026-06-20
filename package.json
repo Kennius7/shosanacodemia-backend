@@ -19,7 +19,10 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "prisma:migrate": "npx prisma migrate dev",
-    "prisma:deploy": "npx prisma migrate deploy"
+    "prisma:deploy": "npx prisma migrate deploy",
+    "ssh:permissions": "chmod 400 shosanaservicekey1.pem",
+    "ssh:ec2-connect": "ssh -i \"shosanaservicekey1.pem\" ec2-user@ec2-54-162-204-214.compute-1.amazonaws.com",
+    "ssh:connect": "ssh -i \"shosanaservicekey1.pem\" ec2-user@ec2-3-217-88-44.compute-1.amazonaws.com"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
