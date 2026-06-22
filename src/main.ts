@@ -25,8 +25,8 @@ async function bootstrap() {
 
   // Swagger Configuration
   const config = new DocumentBuilder()
-    .setTitle('Portfolio Creator API')
-    .setDescription('API documentation for portfolio creation app')
+    .setTitle('Shosanacodemia Backend API')
+    .setDescription('API documentation for Shosanacodemia')
     .setVersion('1.0')
     .addBearerAuth()
     .build();
@@ -49,6 +49,6 @@ async function bootstrap() {
   // Enable NestJS shutdown hooks to gracefully clean up resources (like database connections)
   app.enableShutdownHooks();
 
-  await app.listen(process.env.PORT ?? 4440);
+  await app.listen(process.env.PORT ?? 4440, '0.0.0.0');
 }
 void bootstrap();
