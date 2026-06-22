@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./",
-    "module": "commonjs",
+    "module": "nodenext",
     "target": "es2021",
     "sourceMap": false,
     "declaration": false
