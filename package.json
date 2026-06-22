@@ -24,7 +24,7 @@
     "ssh:ec2-connect": "ssh -i \"shosanaservicekey1.pem\" ec2-user@ec2-3-217-88-44.compute-1.amazonaws.com",
     "ssh:connect1": "ssh -i 'shosanaservicekey1.pem' ec2-user@ec2-3-217-88-44.compute-1.amazonaws.com",
     "ssh:connect2": "ssh -i 'shosanaservicekey1.pem' ec2-user@3.217.88.44",
-    "ssh:connect3": "ssh -i 'shosana_key_1.pem' ec2-user@172.31.17.93",
+    "pm2:reload": "pm2 reload backend --update-env",
     "ssh:connect": "ssh -i 'shosana_key_1.pem' ec2-user@ec2-3-217-88-44.compute-1.amazonaws.com",
     "ssh:connect-robust": "ssh -i shosanaservicekey1.pem -vvv ec2-user@ec2-3-217-88-44.compute-1.amazonaws.com"
   },

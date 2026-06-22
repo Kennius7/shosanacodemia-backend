@@ -20,5 +20,5 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
           script: |
-            cd ~/backend
+            cd ~/shosanacodemia-backend
             ./deploy.sh
