@@ -21,4 +21,5 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             cd ~/shosanacodemia-backend
+            chmod +x deploy.sh
             ./deploy.sh
