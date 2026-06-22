@@ -131,11 +131,11 @@ jobs:
 
       - name: Build image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/shosanacodemia-backend:latest .
+          docker build -t ghcr.io/kennius7/shosanacodemia-backend:latest .
 
       - name: Push image
         run: |
-          docker push ghcr.io/${{ github.repository_owner }}/shosanacodemia-backend:latest
+          docker push ghcr.io/kennius7/shosanacodemia-backend:latest
 
       - name: Deploy
         uses: appleboy/ssh-action@v1.0.3
@@ -146,7 +146,7 @@ jobs:
           script: |
             cd ~/shosanacodemia-backend
 
-            docker pull ghcr.io/${{ github.repository_owner }}/shosanacodemia-backend:latest
+            docker pull ghcr.io/kennius7/shosanacodemia-backend:latest
 
             docker compose down
 
