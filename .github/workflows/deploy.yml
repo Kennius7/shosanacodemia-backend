@@ -148,9 +148,9 @@ jobs:
 
             docker pull ghcr.io/kennius7/shosanacodemia-backend:latest
 
-            docker compose down
+            docker-compose down
 
-            docker compose up -d
+            docker-compose up -d
 
 
 
