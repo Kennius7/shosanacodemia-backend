@@ -78,7 +78,7 @@ jobs:
         with:
           switches: -avzr --delete
           path: dist/
-          remote_path: /home/ec2-user/app/dist/
+          remote_path: /home/ec2-user/shosanacodemia-backend/dist/
           remote_host: ${{ secrets.EC2_HOST }}
           remote_user: ${{ secrets.EC2_USER }}
           remote_key: ${{ secrets.EC2_KEY }}
